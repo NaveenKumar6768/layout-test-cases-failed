@@ -17,8 +17,9 @@ const ConfigurationController = () => (
       return (
         <div className="config-container">
           <h1 className="heading">Layout</h1>
-          <ul className="list-container">
-            <li className="list-item">
+
+          <div className="list-container">
+            <div className="list-item">
               <input
                 type="checkbox"
                 id="content"
@@ -27,8 +28,8 @@ const ConfigurationController = () => (
               />
 
               <label htmlFor="left">Content</label>
-            </li>
-            <li className="list-item">
+            </div>
+            <div className="list-item">
               <input
                 type="checkbox"
                 id="left"
@@ -36,9 +37,9 @@ const ConfigurationController = () => (
                 onChange={onToggleShowLeftNavbar}
               />
               <label htmlFor="right">Left Navbar</label>
-            </li>
+            </div>
 
-            <li className="list-item">
+            <div className="list-item">
               <input
                 type="checkbox"
                 id="right"
@@ -46,8 +47,8 @@ const ConfigurationController = () => (
                 onChange={onToggleShowRightNavbar}
               />
               <label htmlFor="content">Right Navbar</label>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       )
     }}
